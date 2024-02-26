@@ -80,6 +80,8 @@ h1 {
   padding: 10px;
   font-size: 16px;
   margin: 5px;
+  gap: 16px;
+  align-items: center;
 }
 
 .apresentacao__links__subtitulo{
@@ -89,11 +91,13 @@ h1 {
 }
 
 .apresentacao__links__link {
-  
+    display: flex;
     width: 280px;
     text-align: center;
     border-radius: 8px;
     font-size: 24px;
+    justify-content: center;
+    gap: 16px;
     
 }
 
