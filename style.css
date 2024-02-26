@@ -2,11 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-
+*{
+  margin: 0;
+  padding: 0;
+}
 
 body {
   height: 100vh;
-  width: 100%;
   box-sizing: border-box;
   background-color: #000000;
   color: #F6F6F6;
@@ -31,15 +33,16 @@ span {
   padding: 10px;
 }
 
-h1 {
+h1 {  
   font-weight: bold;
 }
 
 .apresentacao {
-  margin: 10% 15%;
+  margin: 10% 11%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 
 .apresentacao__conteudo {
@@ -47,6 +50,7 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  flex-shrink: 3;
 }
 
 .apresentacao__conteudo__titulo {
@@ -57,6 +61,7 @@ h1 {
 .apresentacao__conteudo__texto {
   font-size: 24px;
   font-family: 'Montserrat', sans-serif;
+  
 }
 
 .apresentacao__links{
@@ -76,6 +81,7 @@ h1 {
     text-align: center;
     border-radius: 16px;
     font-size: 24px;
+    
 }
 
 .apresentacao__links a {
