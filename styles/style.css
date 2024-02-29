@@ -4,6 +4,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+
 
 *{
   margin: 0;
@@ -212,14 +215,257 @@ h1 {
 } 
 
 .main__cv__name{
- 
-  
+   
     background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), #ffffff);
     color: rgb(30, 249, 216);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.main__cv__corpo{
+  display: flex;
+  display:grid;
+  align-items: center;
+}
+
+.main__cv__corpo__qrcode{
+  width: 200px;
+  height:200px;
+  position: absolute;
+  right: 0px;
+  border: 3px solid #73AD21;
+  padding: 20px;
+  margin-top: 7px;
+}
+
+.main__cv__corpo__linkedin{
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+
+}
+
+.main__cv__corpo__linkedin{
+  
+  background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), #ffffff);
+  color: rgb(30, 249, 216);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.main__cv__corpo__portfolio{
+  background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), #ffffff);
+  color: rgb(30, 249, 216);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.main__cv__corpo{
+  background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), #ffffff);
+  color: rgb(30, 249, 216);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.main__cv__objetivo__profissional{
+  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
   
 }
 
+.ponto{
+  font-size:40px;
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
 
+.main__cv__formacao{
+  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.main__cv__formacao__desenvolvimento{
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.ponto__formacao{
+  font-size:40px;
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+} 
+
+.main__cv__formacao__analise{
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.formacao__traco{
+  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.desenvolvimento__traco{
+  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.main__cv__formacao__ciencias__economicas{
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+
+.economia__traco{
+  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.main__cv__formacao__marketing{
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.marketing__traco{
+  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.comercio__traco{
+  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.main__cv__formacao__escola__comercio{
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.main__cv__experiencias{
+  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.experiencias__ponto{
+  font-size:40px;
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.experiencias__datas__mrv{
+  font: size 20px;
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+
+
+
+.imobiliaria__traco{
+  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.main__cv__formacao__transacoes__imobiliarias{
+  font: size 40px;
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.subgerente__vendas{
+  background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), #ffffff);
+  color: rgb(30, 249, 216);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none; 
+}
+
+.subgerente__vendas__copercana{
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.carol__coperativa{
+
+  background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), #ffffff);
+  color: rgb(30, 249, 216);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+
+
+}
