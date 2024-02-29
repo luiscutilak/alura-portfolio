@@ -2,9 +2,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+
 *{
   margin: 0;
   padding: 0;
+}
+
+:root{
+  --gradient: linear-gradient(
+    to right,
+    rgb(149 114 252),
+    rgb(67 231 173),
+    rgb(226 212 92)
+  )
 }
 
 body {
@@ -20,6 +32,16 @@ body {
 .cabecalho__menu{
   display: flex;
   gap: 80px;
+}
+
+.cabecalho__menu__link:hover{
+    color: #22D4FD;
+    border: 1px solid #22D4FD;
+    padding: 1px;
+    color: white;
+    text-decoration: none;
+    -webkit-text-stroke: 2px rgb(136, 249, 253); 
+    transition-timing-function: ease-in-out;  
 }
 
 .cabecalho__menu__link{
@@ -38,27 +60,29 @@ body {
 }
 
 
-.titulo-destaque {
+.titulo-destaque >a{
   color: #22D4FD;
+  text-decoration: none;
 }
 
-span {
+/* span {
   color: #22D4FD;
   border: 1px solid #22D4FD;
   padding: 1px;
-}
+  text-decoration: none;
+} */
 
 h1 {  
   font-weight: bold;
 }
 
 .apresentacao {
-  
   padding: 6% 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  align-content: normal;
+  margin-top: -50px;
 }
 
 .apresentacao__conteudo {
@@ -143,14 +167,17 @@ h1 {
 }
 
 .apresentacao__conteudo__titulo-destaque__front-end{
-text-decoration: none;
+  text-decoration: none;
 }
 
 .apresentacao__conteudo__titulo-destaque__front-end:hover{
-        color: white;
-        text-decoration: none;
-        -webkit-text-stroke: 2px darkgreen; 
-        transition-timing-function: ease-in-out;      
+  color: #22D4FD;
+  border: 1px solid #22D4FD;
+  padding: 1px;
+  color: rgb(91, 243, 235);
+  text-decoration: none;
+  -webkit-text-stroke: 2px rgb(136, 249, 253); 
+  transition-timing-function: ease-in-out;   
 }
 
 .rodape {
@@ -161,5 +188,38 @@ text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   font-weight: 400;
+  margin-bottom: -20px
 }
+
+.about__sobre__mim {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  padding: 60px;
+  margin-bottom: 90px;
+}
+
+.about__sobre__mim__texto{
+  line-height: 40px;
+}
+
+.main__cv__name{
+  display: flex;
+  text-decoration: none;
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-size: 90px;
+} 
+
+.main__cv__name{
+ 
+  
+    background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), #ffffff);
+    color: rgb(30, 249, 216);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+}
+
 
