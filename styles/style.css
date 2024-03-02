@@ -28,6 +28,8 @@ body {
   color: #F6F6F6;
 }
 
+
+
 .cabecalho{
   padding: 2% 0% 0% 10%;
 }
@@ -61,7 +63,6 @@ body {
   background:lightgray -39.262px -50.143px / 212.432% 124.461% no-repeat;
   flex-shrink: 0;
 }
-
 
 .titulo-destaque >a{
   color: #22D4FD;
@@ -228,15 +229,17 @@ h1 {
   display:grid;
   align-items: center;
 }
+.main__cv__corpo{
+  text-align: center;
+}
 
 .main__cv__corpo__qrcode{
-  width: 200px;
-  height:200px;
+  flex-wrap: wrap;
+  width: 140px;
+  height:140px;
   position: absolute;
   right: 0px;
-  border: 3px solid #73AD21;
   padding: 20px;
-  margin-top: 7px;
 }
 
 .main__cv__corpo__linkedin{
@@ -466,6 +469,68 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
+}
+
+.principais__tecnologias{
+  background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), #ffffff);
+  color: rgb(30, 249, 216);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
 
 
+
+.tecnologias__ponto{
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+.principais__tecnologias__linguagens{
+  font: size 40px;
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.idiomas{
+  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.idiomas__ponto{
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+.idiomas__br{
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(62, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  font-size: 25px;  
+
+}
+
+.idiomas__us{
+  background-image: linear-gradient(to top, rgb(39, 32, 243), hsl(0, 53%, 57%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
 }
