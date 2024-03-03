@@ -28,8 +28,6 @@ body {
   color: #F6F6F6;
 }
 
-
-
 .cabecalho{
   padding: 2% 0% 0% 10%;
 }
@@ -69,12 +67,6 @@ body {
   text-decoration: none;
 }
 
-/* span {
-  color: #22D4FD;
-  border: 1px solid #22D4FD;
-  padding: 1px;
-  text-decoration: none;
-} */
 
 h1 {  
   font-weight: bold;
@@ -529,6 +521,99 @@ h1 {
 
 .idiomas__us{
   background-image: linear-gradient(to top, rgb(39, 32, 243), hsl(0, 53%, 57%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+
+
+.apresentacao__projetos__img{
+  display: flex;
+  justify-content: end;
+  gap: 40px;
+  flex-shrink: 3;
+  float: right;
+}
+
+.apresentacao__projetos__text{
+  display: grid;
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.apresentacao__projetos__principais__projetos{
+  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.apresentacao__projetos__img{
+  flex-wrap: wrap;
+  width: 140px;
+  height:140px;
+  position: absolute;
+  right: 0px;
+  margin-top:170px;
+}
+
+.apresentacao__projetos__principais{
+  background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), #ffffff);
+  color: rgb(30, 249, 216);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.apresentacao__projetos__principais{
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-size: 90px;
+}
+
+.rodape__projects{
+  padding: 24px;
+  text-align: center;
+  color: #000000;
+  background-color: #22D4FD;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 46px;
+  }
+
+.projetos__principais__projetos__links{
+  text-decoration: none;
+}
+
+.projects__dot{
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+.projects__comma{
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.apresentacao__projetos__principais__projetos__links{
+  background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), #ffffff);
+  color: rgb(30, 249, 216);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
