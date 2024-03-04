@@ -51,17 +51,14 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   font-weight: 600;
-  color: #22D4FD;
+  color: #22d4fd;
   text-decoration: none;
 }
-
-
 .photo-card{
   border-radius: 16px;
   background:lightgray -39.262px -50.143px / 212.432% 124.461% no-repeat;
   flex-shrink: 0;
 }
-
 .titulo-destaque >a{
   color: #22D4FD;
   text-decoration: none;
