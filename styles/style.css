@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Roboto:wght@100;300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=22d4dfRoboto:wght@100;300;500;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
@@ -8,12 +8,22 @@
 
 
 
+
+
 *{
   margin: 0;
   padding: 0;
 }
 
+
 :root{
+  --cor-primaria: #000000;
+  --cor-secundaria: #f6f6f6;
+  --cor-terciaria: #22d4df;
+  --cor-hover: #272727;
+  --fonte-primaria: 'Krona One', sans-serif;
+  --fonte-secundaria: 'Montserrat', sans-serif;
+
   --gradient: linear-gradient(
     to right,
     rgb(149 114 252),
@@ -24,8 +34,8 @@
 
 body {
   box-sizing: border-box;
-  background-color: #000000;
-  color: #F6F6F6;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
 }
 
 .cabecalho{
@@ -38,20 +48,20 @@ body {
 }
 
 .cabecalho__menu__link:hover{
-    color: #22D4FD;
-    border: 1px solid #22D4FD;
+    color: var(--cor-terciaria);
+    border: 1px solid var(--cor-terciaria);
     padding: 1px;
-    color: white;
+    color: var(--cor-secundaria);
     text-decoration: none;
-    -webkit-text-stroke: 2px rgb(136, 249, 253); 
+    -webkit-text-stroke: 2px var(--cor-terciaria); 
     transition-timing-function: ease-in-out;  
 }
 
 .cabecalho__menu__link{
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--fonte-secundaria);
   font-size: 24px;
   font-weight: 600;
-  color: #22d4fd;
+  color:var(--cor-terciaria);
   text-decoration: none;
 }
 .photo-card{
@@ -60,7 +70,7 @@ body {
   flex-shrink: 0;
 }
 .titulo-destaque >a{
-  color: #22D4FD;
+  color:var(--cor-terciaria);
   text-decoration: none;
 }
 
@@ -87,13 +97,13 @@ h1 {
 }
 
 .apresentacao__conteudo__titulo {
-  font-family: 'Krona One', sans-serif;
+  font-family: var(--fonte-primaria), sans-serif;
   font-size: 36px;
 }
 
 .apresentacao__conteudo__texto {
   font-size: 24px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--fonte-secundaria);
   
 }
 
@@ -114,7 +124,7 @@ h1 {
 }
 
 .apresentacao__links__subtitulo{
-  font-family: 'Krona One', sans-serif;
+  font-family: var(--fonte-primaria), sans-serif;
   font-weight: 400;
   font-size: 24px;
 }
@@ -132,7 +142,7 @@ h1 {
 
 .apresentacao__links a {
   font-size: 18px;
-  color: white;
+  color:var(--cor-secundaria);
 }
 
 .apresentacao__links__link {
@@ -140,21 +150,21 @@ h1 {
 }
 
 .apresentacao__links__link {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--fonte-secundaria);
   font-weight: 600;
-  color: #F6F6F6;
+  color:var(--cor-secundaria);
   text-decoration: none;
-  border: 2px solid #22D4FD;
+  border: 2px solid var(--cor-terciaria);
 }
 
 .apresentacao__links__link:hover{
-  background-color: #272727;
+  background-color: var(--cor-hover);
   cursor: pointer;
 }
 
 .apresentacao__conteudo__titulo-destaque__front-end:hover{
-  color: #22D4FD;
-  border: 1px solid #22D4FD;
+  color: var(--cor-terciaria);
+  border: 1px solid var(--cor-terciaria);
   padding: 1px;
   text-decoration: none;
 }
@@ -164,7 +174,7 @@ h1 {
 }
 
 .apresentacao__conteudo__titulo-destaque__front-end:hover{
-  color: #22D4FD;
+  color: var(--cor-terciaria);
   border: 1px solid #22D4FD;
   padding: 1px;
   color: rgb(91, 243, 235);
@@ -176,9 +186,9 @@ h1 {
 .rodape {
   padding: 24px;
   text-align: center;
-  color: #000000;
-  background-color: #22D4FD;
-  font-family: 'Montserrat', sans-serif;
+  color: var(--cor-primaria);
+  background-color:var(--cor-terciaria);
+  font-family: var(--fonte-secundaria);
   font-size: 24px;
   font-weight: 400;
   margin-bottom: -20px
@@ -186,7 +196,7 @@ h1 {
 
 .about__sobre__mim {
   font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--fonte-secundaria);
   font-size: 20px;
   padding: 60px;
   margin-bottom: 90px;
@@ -206,7 +216,7 @@ h1 {
 
 .main__cv__name{
    
-    background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), #ffffff);
+    background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), var(--cor-secundaria));
     color: rgb(30, 249, 216);
     background-clip: text;
     -webkit-background-clip: text;
@@ -241,7 +251,7 @@ h1 {
 
 .main__cv__corpo__linkedin{
   
-  background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), var(--cor-secundaria));
   color: rgb(30, 249, 216);
   background-clip: text;
   -webkit-background-clip: text;
@@ -250,7 +260,7 @@ h1 {
 }
 
 .main__cv__corpo__portfolio{
-  background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), var(--cor-secundaria));
   color: rgb(30, 249, 216);
   background-clip: text;
   -webkit-background-clip: text;
@@ -259,7 +269,7 @@ h1 {
 }
 
 .main__cv__corpo{
-  background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), var(--cor-secundaria));
   color: rgb(30, 249, 216);
   background-clip: text;
   -webkit-background-clip: text;
@@ -272,7 +282,7 @@ h1 {
 }
 
 .main__cv__objetivo__profissional{
-  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -282,7 +292,7 @@ h1 {
 
 .ponto{
   font-size:40px;
-  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -290,7 +300,7 @@ h1 {
 }
 
 .main__cv__formacao{
-  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -298,7 +308,7 @@ h1 {
 }
 
 .main__cv__formacao__desenvolvimento{
-  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -307,7 +317,7 @@ h1 {
 
 .ponto__formacao{
   font-size:40px;
-  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -315,7 +325,7 @@ h1 {
 } 
 
 .main__cv__formacao__analise{
-  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -323,7 +333,7 @@ h1 {
 }
 
 .formacao__traco{
-  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -331,7 +341,7 @@ h1 {
 }
 
 .desenvolvimento__traco{
-  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%),var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -339,7 +349,7 @@ h1 {
 }
 
 .main__cv__formacao__ciencias__economicas{
-  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -348,7 +358,7 @@ h1 {
 
 
 .economia__traco{
-  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -356,7 +366,7 @@ h1 {
 }
 
 .main__cv__formacao__marketing{
-  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%),var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -364,7 +374,7 @@ h1 {
 }
 
 .marketing__traco{
-  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -372,7 +382,7 @@ h1 {
 }
 
 .comercio__traco{
-  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -380,7 +390,7 @@ h1 {
 }
 
 .main__cv__formacao__escola__comercio{
-  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -388,7 +398,7 @@ h1 {
 }
 
 .main__cv__experiencias{
-  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -397,7 +407,7 @@ h1 {
 
 .experiencias__ponto{
   font-size:40px;
-  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -406,7 +416,7 @@ h1 {
 
 .experiencias__datas__mrv{
   font: size 20px;
-  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -417,7 +427,7 @@ h1 {
 
 
 .imobiliaria__traco{
-  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -426,7 +436,7 @@ h1 {
 
 .main__cv__formacao__transacoes__imobiliarias{
   font: size 40px;
-  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -434,7 +444,7 @@ h1 {
 }
 
 .subgerente__vendas{
-  background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), var(--cor-secundaria));
   color: rgb(30, 249, 216);
   background-clip: text;
   -webkit-background-clip: text;
@@ -443,7 +453,7 @@ h1 {
 }
 
 .subgerente__vendas__copercana{
-  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -452,7 +462,7 @@ h1 {
 
 .carol__coperativa{
 
-  background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), var(--cor-secundaria));
   color: rgb(30, 249, 216);
   background-clip: text;
   -webkit-background-clip: text;
@@ -461,7 +471,7 @@ h1 {
 }
 
 .principais__tecnologias{
-  background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), var(--cor-secundaria));
   color: rgb(30, 249, 216);
   background-clip: text;
   -webkit-background-clip: text;
@@ -472,7 +482,7 @@ h1 {
 
 
 .tecnologias__ponto{
-  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -482,7 +492,7 @@ h1 {
 
 .principais__tecnologias__linguagens{
   font: size 40px;
-  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -490,7 +500,7 @@ h1 {
 }
 
 .idiomas{
-  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -498,7 +508,7 @@ h1 {
 }
 
 .idiomas__ponto{
-  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -507,7 +517,7 @@ h1 {
 }
 
 .idiomas__br{
-  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(62, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(62, 100%, 68%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -517,7 +527,7 @@ h1 {
 }
 
 .idiomas__us{
-  background-image: linear-gradient(to top, rgb(39, 32, 243), hsl(0, 53%, 57%), #ffffff);
+  background-image: linear-gradient(to top, rgb(39, 32, 243), hsl(0, 53%, 57%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -544,7 +554,7 @@ h1 {
 }
 
 .apresentacao__projetos__principais__projetos{
-  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(255, 138, 5), hsl(30, 100%, 68%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -561,7 +571,7 @@ h1 {
 }
 
 .apresentacao__projetos__principais{
-  background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), var(--cor-secundaria));
   color: rgb(30, 249, 216);
   background-clip: text;
   -webkit-background-clip: text;
@@ -577,9 +587,9 @@ h1 {
 .rodape__projects{
   padding: 24px;
   text-align: center;
-  color: #000000;
+  color: var(--cor-primaria);
   background-color: #22D4FD;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--fonte-secundaria);
   font-size: 24px;
   font-weight: 400;
   margin-top: 46px;
@@ -590,7 +600,7 @@ h1 {
 }
 
 .projects__dot{
-  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -599,7 +609,7 @@ h1 {
 }
 
 .projects__comma{
-  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(43, 255, 5), hsl(103, 100%, 68%), var(--cor-secundaria));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -609,7 +619,7 @@ h1 {
 }
 
 .apresentacao__projetos__principais__projetos__links{
-  background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), #ffffff);
+  background-image: linear-gradient(to top, rgb(255, 5, 172), hsl(179, 100%, 68%), var(--cor-secundaria));
   color: rgb(30, 249, 216);
   background-clip: text;
   -webkit-background-clip: text;
