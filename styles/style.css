@@ -640,8 +640,14 @@ h1 {
 }
 
 @media (max-width: 1200px) {
+
+  .cabecalho{
+    padding: 10%;
+  }
+
   .apresentacao{
     flex-direction: column-reverse;
+    padding: 5%;
   }
 }
 
@@ -649,8 +655,16 @@ h1 {
   text-align: center;
 }
 
+.cabecalho__menu{
+  justify-content: center;
+}
+
 
 .apresentacao__imagem__about{
   margin-top: 75px;
   width: 30%;
+}
+
+.apresentacao__conteudo{
+  width: auto;
 }
