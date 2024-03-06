@@ -36,6 +36,7 @@ body {
   box-sizing: border-box;
   background-color: var(--cor-primaria);
   color: var(--cor-secundaria);
+  /* overflow: hidden; */
 }
 
 .cabecalho{
@@ -86,10 +87,11 @@ h1 {
   justify-content: space-between;
   align-content: normal;
   margin-top: -50px;
+  gap: 82px;
 }
 
 .apresentacao__conteudo {
-  width: 615px;
+  width: 50%px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -98,7 +100,8 @@ h1 {
 
 .apresentacao__conteudo__titulo {
   font-family: var(--fonte-primaria), sans-serif;
-  font-size: 36px;
+  font-size: 2.25rem;
+  margin-right: 37px
 }
 
 .apresentacao__conteudo__texto {
@@ -129,9 +132,9 @@ h1 {
   font-size: 1.5rem;
 }
 
-.apresentacao__links__link {
+.apresentacao__links__link__navegacao {
     display: flex;
-    width: 280px;
+    width: 50%;
     text-align: center;
     border-radius: 8px;
     font-size: 1.5rem;
@@ -145,11 +148,11 @@ h1 {
   color:var(--cor-secundaria);
 }
 
-.apresentacao__links__link {
+.apresentacao__links__link__navegacao {
   padding: 21.5px 0;
 }
 
-.apresentacao__links__link {
+.apresentacao__links__link__navegacao {
   font-family: var(--fonte-secundaria);
   font-weight: 600;
   color:var(--cor-secundaria);
@@ -157,7 +160,7 @@ h1 {
   border: 2px solid var(--cor-terciaria);
 }
 
-.apresentacao__links__link:hover{
+.apresentacao__links__link__navegacao:hover{
   background-color: var(--cor-hover);
   cursor: pointer;
 }
@@ -625,4 +628,29 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
+}
+
+.apresentacao__imagem{
+  width: 50%;
+  margin-top: 90px;
+}
+
+.apresentacao__projetos__img{
+  width: 50%;
+}
+
+@media (max-width: 1200px) {
+  .apresentacao{
+    flex-direction: column-reverse;
+  }
+}
+
+.apresentacao__imagem-about{
+  text-align: center;
+}
+
+
+.apresentacao__imagem__about{
+  margin-top: 75px;
+  width: 30%;
 }
